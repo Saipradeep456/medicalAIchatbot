@@ -67,11 +67,10 @@ This is a Flask-based healthcare chatbot application that leverages Google's Gem
 
 ### Required Services
 - **Google Gemini API**: Primary AI service for healthcare responses
-- **SQLite/PostgreSQL**: Database storage (SQLite default, PostgreSQL configurable)
+- **SQLite3 Database**: Local database storage for chat sessions and messages
 
 ### Environment Variables
-- `GEMINI_API_KEY`: Google Gemini API authentication
-- `DATABASE_URL`: Database connection string (optional, defaults to SQLite)
+- `GEMINI_API_KEY`: Google Gemini API authentication (required)
 - `SESSION_SECRET`: Flask session encryption key (optional, has default)
 
 ### Python Packages
