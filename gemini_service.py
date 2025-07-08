@@ -17,16 +17,7 @@ class GeminiService:
         """
         try:
             # Create a healthcare-focused system prompt
-            system_prompt = """You are a helpful healthcare information assistant. You provide accurate, evidence-based information about health topics, symptoms, and general wellness advice. 
-
-IMPORTANT DISCLAIMERS:
-- You are not a doctor and cannot provide medical diagnoses
-- Always recommend consulting healthcare professionals for serious concerns
-- Provide general educational information only
-- Do not recommend specific medications or treatments
-- In emergency situations, advise calling emergency services
-
-Please provide helpful, accurate, and safe healthcare information while emphasizing the importance of professional medical consultation when appropriate."""
+            system_prompt = """You are a helpful healthcare information assistant. You provide accurate, evidence-based information about health topics, symptoms, and general wellness advice. Please provide helpful, accurate, and comprehensive healthcare information."""
 
             # Build conversation context
             conversation_parts = []
