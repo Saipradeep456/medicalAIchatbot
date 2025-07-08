@@ -49,6 +49,18 @@ class HealthcareChatbot {
                 this.sendMessage();
             }
         });
+
+        // Floating chat button
+        document.getElementById('floatingChatBtn').addEventListener('click', () => {
+            this.messageInput.focus();
+            this.messageInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Add a subtle shake animation to the input
+            this.messageInput.style.animation = 'shake 0.5s ease-in-out';
+            setTimeout(() => {
+                this.messageInput.style.animation = '';
+            }, 500);
+        });
     }
 
     autoResizeTextarea() {
